@@ -1,4 +1,4 @@
 variable "zone_id" { }
-variable "names" { default = "" }
-variable "records" { default = "" }
+variable "name" { }
+variable "record" { }
 variable "type" { }
