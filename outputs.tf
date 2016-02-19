@@ -1,3 +1,3 @@
-output "users" {
-  value = "${join(",", aws_iam_user.user.*.id)}"
+output "records" {
+  value = "${join(",", aws_route53_record.entry.*.id)}"
 }
