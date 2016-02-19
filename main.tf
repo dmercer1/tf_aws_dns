@@ -4,5 +4,5 @@ resource "aws_route53_record" "entry" {
   records = "${var.records}"
   type = "${var.type}"
   ttl = "300"
-  count = "${length(compact(split(",", var.records)))}"
+  count = "${length(compact(split(",", var.names)))}"
 }
